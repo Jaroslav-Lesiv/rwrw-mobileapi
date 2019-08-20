@@ -1,0 +1,17 @@
+[
+	{
+		"period": 1,
+		"price": 50,
+		"active": true
+	},
+	{
+		"period": 3,
+		"price": 45,
+		"active": true
+	},
+	{
+		"period": 6,
+		"price": 40,
+		"active": true
+	}
+]

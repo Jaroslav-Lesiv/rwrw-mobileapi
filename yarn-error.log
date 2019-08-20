@@ -1,0 +1,91 @@
+Arguments: 
+  /home/jar/.nvm/versions/node/v10.15.3/bin/node /home/jar/.nvm/versions/node/v10.15.3/bin/yarn babel-node ./app.js
+
+PATH: 
+  /home/jar/develop/cross/rwrd-web-app/node_modules/.bin:/tmp/yarn--1563518047443-0.563103125119448:/home/jar/develop/cross/rwrd-web-app/node_modules/.bin:/home/jar/.config/yarn/link/node_modules/.bin:/home/jar/.yarn/bin:/home/jar/.nvm/versions/node/v10.15.3/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/jar/.nvm/versions/node/v10.15.3/lib/node_modules/npm/bin/node-gyp-bin:/home/jar/.nvm/versions/node/v10.15.3/bin/node_modules/npm/bin/node-gyp-bin:/home/jar/.nvm/versions/node/v10.15.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin:/snap/bin:/home/jar/Android/Sdk/emulator:/home/jar/Android/Sdk/tools:/home/jar/Android/Sdk/tools/bin:/home/jar/Android/Sdk/platform-tools:/home/jar/Android/Sdk/emulator:/home/jar/Android/Sdk/tools:/home/jar/Android/Sdk/tools/bin:/home/jar/Android/Sdk/platform-tools:/home/jar/Android/Sdk/emulator:/home/jar/Android/Sdk/tools:/home/jar/Android/Sdk/tools/bin:/home/jar/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.15.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: package.json: EIO: i/o error, write
+      at writeSync (fs.js:568:3)
+      at SyncWriteStream._write (internal/fs/sync_write_stream.js:22:3)
+      at doWrite (_stream_writable.js:410:12)
+      at writeOrBuffer (_stream_writable.js:394:5)
+      at SyncWriteStream.Writable.write (_stream_writable.js:294:11)
+      at ConsoleReporter.warn (/home/jar/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:96024:17)
+      at warn (/home/jar/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:51104:23)
+      at module.exports.exports.default (/home/jar/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:37084:7)
+      at /home/jar/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:51115:51
+      at Generator.next (<anonymous>)
+
+npm manifest: 
+  {
+  	"main": "./app.js",
+  	"name": "rwrd-server",
+  	"version": "0.1.0",
+  	"scripts": {
+  		"babel-node": "babel-node --presets=latest",
+  		"start": "nodemon --exec yarn babel-node -- ./app.js",
+  		"serve": "babel-node --presets=latest ./app.js",
+  		"database:imports": "babel-node --presets=latest ./database/imports.js",
+  		"heroku-postbuild": "cd client && yarn && yarn build && yarn symlink"
+  	},
+  	"engines": {
+  		"node": "10.15.3",
+  		"yarn": "1.16.0"
+  	},
+  	"dependencies": {
+  		"@babel/plugin-transform-spread": "^7.2.2",
+  		"@babel/register": "^7.4.0",
+  		"@types/express": "^4.16.1",
+  		"@types/node": "^11.13.2",
+  		"babel-cli": "^6.26.0",
+  		"babel-preset-es2017": "^6.24.1",
+  		"babel-preset-latest": "^6.24.1",
+  		"babel-preset-stage-2": "^6.24.1",
+  		"babel-register": "^6.26.0",
+  		"body-parser": "^1.18.3",
+  		"cors": "^2.8.5",
+  		"ddos": "^0.2.1",
+  		"dotenv": "^7.0.0",
+  		"express": "^4.16.4",
+  		"express-brute": "^1.0.1",
+  		"express-fileupload": "^1.1.4",
+  		"flat": "^4.1.0",
+  		"fs-extra": "^7.0.1",
+  		"helmet": "^3.16.0",
+  		"html-pdf": "^2.2.0",
+  		"iplocation": "^6.1.0",
+  		"joi": "^14.3.1",
+  		"joi-password-complexity": "^2.0.1",
+  		"js-sha256": "^0.9.0",
+  		"jsonwebtoken": "^8.5.1",
+  		"lodash": "^4.17.11",
+  		"mailgun-js": "^0.22.0",
+  		"md5": "^2.2.1",
+  		"moment": "^2.24.0",
+  		"mongoose": "^5.5.0",
+  		"morgan": "^1.9.1",
+  		"node-cron": "^2.0.3",
+  		"nodemon": "^1.18.11",
+  		"passport": "^0.4.0",
+  		"passport-facebook": "^3.0.0",
+  		"passport-google-oauth": "^2.0.0",
+  		"passport-local": "^1.0.0",
+  		"stripe": "^6.28.0"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
