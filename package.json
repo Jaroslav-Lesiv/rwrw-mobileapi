@@ -39,7 +39,7 @@
 		"joi-password-complexity": "^2.0.1",
 		"js-sha256": "^0.9.0",
 		"jsonwebtoken": "^8.5.1",
-		"lodash": "^4.17.11",
+		"lodash": "^4.17.19",
 		"mailgun-js": "^0.22.0",
 		"md5": "^2.2.1",
 		"moment": "^2.24.0",
